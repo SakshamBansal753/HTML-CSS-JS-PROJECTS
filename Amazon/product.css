@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    
+   background-color:#f0f0f0;
+}
+
+.nav {
+    color: white;
+    background-color: #0f1111;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#image {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKY8W-m3gCpB6ppQcxGq-GuWJd_71Hu2ckig&s");
+    background-size: cover; 
+    margin-right: 20px;
+    width: 200px; 
+    height: 60px;
+}
+
+#image:hover {
+    border: 1px solid white;
+}
+
+#input {
+    display: flex;
+    align-items: center;  /* Align items horizontally */
+    margin-left: 20px;
+}
+
+#all {
+    padding: 10px;
+    border: 1px solid black;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    height: 45px;
+
+}
+
+#all:focus {
+    border: 1px solid white;
+}
+
+#text {
+    width: 900px; /* Adjusted width to prevent overflow */
+    height: 45px;
+    font-weight: bold;
+    font-size: 16px;
+   
+    border-left: 0;
+    border-right: 0;
+    background-color: #f0f0f0;
+}
+
+#ic {
+    font-size: 20px;
+    color: white;
+    background-color: orange;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#ic:hover {
+    background-color: #ff6600; /* Change color on hover */
+}
+
+#icon {
+    display: flex;
+    align-items: center;
+   
+}
+
+#icon i {
+    margin-right: 5px;
+    font-size: 20px;
+}
+#icon:hover{
+    border: 1px solid white;
+}
+#flag{
+    background-color: black;
+    color: #f0f0f0;
+    border: 0;
+    width: 50px;
+    height: 20px;
+    font-size: 20px;
+}
+#language{
+    display: flex;
+    margin-left: 20px;
+}
+#language:hover{
+    border: 1px solid white;
+}
+#sign{
+    margin-left: 20px;
+}#sign:hover{
+    border: 1px solid white;
+}
+#return{
+    margin-left: 30px;
+}#return:hover{
+    border: 1px solid white;
+}
+#cart{
+    margin-right: 0;
+    width: 70px;
+    display: flex;
+    margin-left:30px ;
+}#cart:hover{
+    border: 1px solid white;
+}
+#c{
+    margin-top: 15px;
+}
+#category{
+    display: flex;
+    background-color: #232f3e;
+    height: 50px;
+    color: white;
+    padding-top: 5px;
+}
+#py{
+    display: flex;
+  padding-top: 10px;
+    
+}
+.red{
+    margin-left: 23px;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+#im{
+    background-color: orangered;
+    width: max-content;
+    border: 0;
+    color: white;
+}
+.red:hover{
+    border: 1px solid white;
+}
+#panel{
+    font-size: 20px;
+    padding-top: 10px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+#bg{
+    transition:animation translate 0.3s;
+animation: bgs 20s infinite;
+    height: 500px;
+    perspective: 1000px;
+}
+@keyframes bgs{
+    0%{
+        background-image: url('https://images-eu.ssl-images-amazon.com/images/G/31/img21/MA2024/GW/August/Unrec/BAU/21Aug/2-1._CB565867124_.jpg');
+    }30%{
+          background-image: url('https://images-eu.ssl-images-amazon.com/images/G/31/OHL/24/BAU/feb/PC_hero_1_2x_1._CB582889946_.jpg');
+    }60%{
+        background-image: url('https://images-eu.ssl-images-amazon.com/images/G/31/img21/MA2024/GW/August/Unrec/BAU/21Aug/1-1._CB565867124_.jpg');
+    } 85%{
+        background-image: url('https://images-eu.ssl-images-amazon.com/images/G/31/img23/GW/P42/Boult_3000x1200-PC._CB543542644_.jpg');
+    } 100%{
+        background-image: url('https://images-eu.ssl-images-amazon.com/images/G/31/INSLGW/pc_unrec_refresh._CB555261616_.jpg');
+    }
+}
+#head,#app,#boat,#up,#for{
+    text-decoration: underline;
+    font-size: x-large;
+    font-weight: bold;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+#I,#me,#boult,#chip,#tox{
+    display: flex;
+    flex-wrap: wrap;
+}
+#rush,#Appliance,#Headphones,#Automative,#women{
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    margin-left: 90px;
+    margin-top: 30px;
+    transform: rotateX(0) rotateY(0);
+}
+#rush:hover,#Appliance:hover,#Headphones:hover,#Automative:hover,#women:hover{
+    transform: rotateX(25deg) rotateY(15deg);
+    box-shadow: 0 0 20px blue, 5px 6px 7px blue, 10px 30px 40px blue;
+}
+
+.Fashion,.Air,.noise,.off,.style{
+    margin-left: 50px;
+    margin-top: 30px;
+}
+#p,#s,#x,#a,#o{
+    margin-left: 50px;
+    color: blue;
+    margin-top: 10px;
+}
+#boxes{
+    display: flex;
+    flex-wrap: wrap;
+}
+#headphone{
+    margin-right: 20px;
+}
+#best{
+    width: 500px;
+    height: 500px;
+    margin-left: 90px;
+    margin-top: 30px;
+}
+#your{
+    background-color: white;
+    height: 120px;
+}
+#date{
+    margin-top: 20px;
+background-color: white;
+    height: 320px;
+    
+}
+#btn {
+    border-radius: 20px;
+   border: 2px solid white;
+    width: 400px;
+    background-color: yellow;
+    height: 50px;
+    font-size: large;
+}
+#experience{
+    margin-top: 10px;
+    margin-left: 80px;
+    font-weight: bolder;
+    font-size: x-large;
+    margin-right: 120px;
+
+    width: 220px;
+}
+#but{
+    margin-top: 10px;
+    margin-left: 40px;
+}
+#calender{
+    margin-left: 50px;
+}
+#re{
+    margin-left: 60px;
+    margin-top: 30px;
+}
+#date{
+    font-weight: bolder;
+}
+#top{
+    border: none;
+    color: white;
+  margin-left: 800px;
+    height: 100px;
+    background-color: #232f3e;
+    font-weight: bold;
+    font-size: x-large;
+}
+#back{
+    background-color: #232f3e;
+    }
+    #main{
+        display: flex;
+        height: 400px;
+        color: white;
+        background-color: #333;
+       font-family: Arial, Helvetica, sans-serif;
+       font-weight: bold;
+       padding-top: 40px;
+       font-size: larger;
+    }
+    #about{
+       
+        margin-left: 120px;
+    }
+    #Connect,#money,#help{
+     margin-left: 220px;
+    }
+    #am{
+        display: flex;
+        background-color: #333;
+        height: 60px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-top: 1px solid white;
+    }
+    #photo{
+        margin-left: 700px;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKY8W-m3gCpB6ppQcxGq-GuWJd_71Hu2ckig&s");
+        background-size: cover; 
+        margin-right: 20px;
+        width: 200px; 
+        height: 60px;
+    }
+    #bx,#naksha{
+        margin-left: 80px;
+        margin-bottom: 20px;
+        color: #f0f0f0;
+        border: 1px solid white;
+        background-color: #333;
+        height: 60px;
+    }
