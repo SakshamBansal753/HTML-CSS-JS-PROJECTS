@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'baron';
+    src: url('baron.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+#first{
+    background-image: url("Rectangle.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+}
+#alll{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+#kutta{
+    width: 100%;
+    height: 1000px;
+}
+#history{
+    padding-top: 200px;
+    padding-left: 100px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    font-size: 80px;
+}
+#photos123{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 10px;
+}
+#secondd{
+    background-image: url("Section2.png");
+    background-size: contain;
+    background-repeat: no-repeat;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   margin-top: 80px;
+   
+}
+#mission{   
+        height: 300px; 
+}
+#roadmap{
+    height:500px;
+    font-size: 100px;
+    color: white;
+}
+#thirdd{
+    display: flex;
+    
+}
+#adventure{
+    display: flex;
+    margin-left: 100px;
+    right: 0;
+}
+#columnn{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+#jobs{
+    display: flex;
+    gap: 20px;
+}
+.righttt{
+    color: white;
+    margin-left: 120px;
+}
+#toke{
+    background-image: url("Section2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+      flex-direction: column;
+      margin-top: 100px;
+}
+#boxes{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    margin-top: 150px;
+    margin-left: 100px;
+}
+#indbox{
+    height: 1000px;
+    width: 100%;
+}
+#right{
+    display: flex;
+}
+#merch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#pink{
+    background-image: url(pinkbg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1500px;
+}
+#games{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+}
+#gamep{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+      margin-top: 20px;
+}
+#social{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+#tweetbox{
+    background-image: url(Union.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    width: 500px;
+}
+#tweetdog{
+    display: flex;
+}
