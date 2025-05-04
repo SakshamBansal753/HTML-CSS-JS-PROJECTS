@@ -1,6 +1,6 @@
 # QR Code Generator
 
-##Hello young guns, I am Saksham 👋
+## Hello young guns, I am Saksham 👋
 
 Welcome to my simple Node.js QR Code Generator project! This CLI tool allows you to:
 
@@ -26,4 +26,4 @@ npm i qr-image
 node index.js
 ```
 
-#Happy Coding
+# Happy Coding
