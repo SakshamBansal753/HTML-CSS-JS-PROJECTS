@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EJS Tags</title>
+</head>
+
+<body>
+  <h1>
+    <!-- Tite goes here -->
+     <%=title %>
+  </h1>
+  <p>Current second:
+    <!-- Current second goes here -->
+     <%= seconds%>
+  </p>
+ <% if (seconds % 2===0) { %>
+  <ul>
+   <% items.forEach((item)=>{%>
+    <li>
+      <%= item %>
+    </li>
+  <% }) %>
+  </ul>
+ <% } else { %>
+  <p>No items to display</p>
+  <% } %>
+  <p>
+    <!-- HTML content goes here -->
+  </p>
+  <%- include("footer.ejs") %>
+  <%-include("solution.ejs")%>
+  <!-- Footer goes here -->
+</body>
+
+</html>
