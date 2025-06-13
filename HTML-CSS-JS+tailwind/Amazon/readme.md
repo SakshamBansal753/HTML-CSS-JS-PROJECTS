@@ -22,4 +22,4 @@ This is a **frontend clone** of the Amazon home page, built using only **HTML** 
 - 🔻 Footer with useful links
 - 🖼️ Placeholder product images
 
-<img src="https://github.com/SakshamBansal753/HTML-CSS-JS-PROJECTS/blob/main/Amazon/my%20amazon.png"/>
+<img src=https://github.com/SakshamBansal753/Web_Dev/blob/main/HTML-CSS-JS%2Btailwind/Amazon/my%20amazon.png/>
