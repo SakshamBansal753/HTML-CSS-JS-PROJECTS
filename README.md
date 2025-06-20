@@ -1,4 +1,4 @@
-# HTML-CSS-JS-PROJECTS
+# WEB DEVELOPMENT
 
 **📚 Learning Goals**
 💡 Master frontend structure and styling
