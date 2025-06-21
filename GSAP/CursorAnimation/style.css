@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html,
+body{
+    color: white;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#cursor{
+    height: 20px;
+    width:20px;
+    background-color: white;
+    border-radius: 50%;
+    position: fixed;
+    color: red;
+    font-size: 3px;
+    z-index: 9;
+   
+}
+#image{
+    height: 30vw;
+    width: 50vw;
+    background-color: brown;
+    position: relative;
+    
+}
+#image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#overlay{
+    background-color: red;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    z-index: 10;
+}
