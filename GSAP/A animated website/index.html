@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GSAP Scroll Text</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+  <style>
+    body {
+      overflow-x: hidden;
+    }
+    #mate span,
+#anything span {
+  display: inline-block;
+  perspective: 800px;
+}
+    .wrapper {
+    perspective: 800px;
+  }
+
+  .hyphen {
+    transform-style: preserve-3d;
+    
+  }
+
+  .random {
+  transform: translateZ(160px) translateX(-120px) rotateY(35deg);
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.97);
+}
+  </style>
+</head>
+<body class="bg-black text-white overflow-x-hidden">
+ <header class="bg-gradient-to-r from-green-400 via-green-200 to-white w-screen flex justify-center text-black p-3">
+        <p>  <i class="ri-megaphone-line text-2xl"></i>  GSAP is now <u> free for everyone</u> ,thanks to Webflow's support!</p>
+        </header>
+        <div class=" border-b border-white rounded-b-2xl p-3 ">
+        <nav class=" text-2xl mt-2 pl-4 flex justify-between items-center text-white">
+          
+      <div class="flex space-x-6 gap-2 ">
+        <div class=" maintext text-4xl font-bold ">GSAP</div>
+
+        <a href="#" class=" opacity-50 hover:opacity-100 transition-opacity">Tools</a>
+        <a href="#" class=" opacity-50 hover:opacity-100 transition-opacity">Showcase</a>
+        <a href="#" class=" opacity-50 hover:opacity-100 transition-opacity">Community</a>
+        <a href="#" class="opacity-50 hover:opacity-100 transition-opacity">Learn GSAP</a>
+        <a href="#" class="opacity-50 hover:opacity-100 transition-opacity">Docs</a>
+        <a href="#" class="opacity-50 hover:opacity-100 transition-opacity">Demos</a>
+      </div>
+            <div class="text-white  hover:opacity-100">
+                Login/Create Account
+               <button class="relative group overflow-hidden border border-white text-white px-6 py-2 rounded-3xl">
+        <span class="relative z-10 group-hover:text-black transition-colors duration-300">
+        Get GSAP
+        </span>
+        <span class="absolute left-0 top-0 h-full w-0 bg-white transition-all duration-500 ease-out group-hover:w-full z-0"></span>
+        </button>      </div>
+                
+            </nav>
+   
+        </div>
+        <div>
+                <div class="anime relative  text-[200px] font-[600] left-[150px] text-white">
+                <div>     <svg viewBox="0 0 137 135" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" class="xcircle w-10 relative ml-[60px] top-[52px] ">
+                <path d="M84.1148 67.3453H136.194C136.637 67.3453 137 67.7028 137 68.1397V134.043C137 134.484 136.633 134.845 136.186 134.841C99.0222 134.416 68.9737 104.827 68.502 68.2191V134.206C68.502 134.643 68.1392 135 67.6958 135H0.814284C0.366822 135 -2.06673e-05 134.639 0.00401052 134.198C0.439379 97.2879 30.9354 67.5042 68.498 67.5002H0.806238C0.362807 67.5002 0 67.1427 0 66.7057V0.802561C0 0.361644 0.366822 0.000171863 0.814284 0.00414409C37.9778 0.429172 68.0263 30.0183 68.498 66.6263V0.794617C68.498 0.357672 68.8608 0.000171819 69.3042 0.000171819H136.186C136.633 0.000171819 137 0.361644 136.996 0.802561C136.621 32.4969 114.079 58.94 83.9334 65.7802C83.0022 65.9907 83.1594 67.3453 84.1189 67.3453H84.1148Z" fill="url(#paint0_linear_1655_45397)"></path>
+                <path d="M84.1148 67.3453H136.194C136.637 67.3453 137 67.7028 137 68.1397V134.043C137 134.484 136.633 134.845 136.186 134.841C99.0222 134.416 68.9737 104.827 68.502 68.2191V134.206C68.502 134.643 68.1392 135 67.6958 135H0.814284C0.366822 135 -2.06673e-05 134.639 0.00401052 134.198C0.439379 97.2879 30.9354 67.5042 68.498 67.5002H0.806238C0.362807 67.5002 0 67.1427 0 66.7057V0.802561C0 0.361644 0.366822 0.000171863 0.814284 0.00414409C37.9778 0.429172 68.0263 30.0183 68.498 66.6263V0.794617C68.498 0.357672 68.8608 0.000171819 69.3042 0.000171819H136.186C136.633 0.000171819 137 0.361644 136.996 0.802561C136.621 32.4969 114.079 58.94 83.9334 65.7802C83.0022 65.9907 83.1594 67.3453 84.1189 67.3453H84.1148Z" fill="url(#pattern-home-hero-windmill-0)" fill-opacity="0.6" style="mix-blend-mode:multiply"></path>
+                <defs>
+                <pattern id="pattern-home-hero-windmill-0" patternContentUnits="objectBoundingBox" width="1.45985" height="1.48148">
+                <use xlink:href="#svg-noise" transform="scale(0.00291971 0.00296296)"></use>
+                </pattern>
+                <linearGradient id="paint0_linear_1655_45397" x1="-76.6791" y1="-15.6157" x2="165.682" y2="81.0082" gradientUnits="userSpaceOnUse">
+                <stop offset="0.427083" stop-color="#FF8709"></stop>
+                <stop offset="0.791667" stop-color="#F7BDF8"></stop>
+                </linearGradient>
+                </defs>
+                </svg></div>
+                <div class="animate " id="mate">Aaima10</div>
+            <div class="animate ml-[340px] relative z-10 " id="anything">anything</div>
+            <img src="img.jpg" width="60" class="spiral ml-[750px] relative z-0 top-[-90px]"/>
+           
+            
+            </div>
+            <div class="text-white">
+                  <button class="btn text-xl text-white rounded-3xl p-1 bg-gradient-to-r from-green-500 via-green-300 to-green-200 border-0 relative ml-[1151px] w-[320px]">
+  <span class="block bg-black rounded-2xl px-8 py-4"><span class="GET initial-scale hover:transform">GET</span> <span class="GS inline-block">GSAP</span> <span class="inline-block border rounded-full p-[2px] bg-white"><i class="ri-arrow-down-line text-black"></i></span></span>
+</button> 
+<div class="curly text-white  flex  ">
+              <img src="bracket.JPG" class="w-9 mt-[-30px]"/>
+              <div class=" inline-block text-4xl">GSAP – A wildly robust JavaScript animation<br> library built for professionals</div>  
+              <img src="bracket2.JPG" class="w-9 mt-[-30px]"/>
+            </div>
+              <hr class="border-t border-white my-4 w-screen left-[-120px]" />
+            
+            </div>
+            <div class="text-white flex ">
+               <img src="bracket.JPG" class="w-9 "/>
+              <div class=" inline-block mt-[50px] text-xl">Why GSAP</div>  
+              <img src="bracket2.JPG" class=" w-9"/>
+            </div>
+            <div class="text-white text-[60px] ml-[120px] mr-[120px] mt-[50px]">
+                GSAP allows you to <span class="touchy inline-block ml-3 ">effortlessly  animate</span> anything JS can touch. Delivering silky-smooth performance and unmatched support so you can focus on the fun stuff.
+            </div>
+           <section class="wrapper2"></section> 
+  <div class="wrapper  overflow-hidden flex items-center h-[100vh] ">
+    <div class="hyphen  whitespace-nowrap flex" > 
+      <div>
+    <div class="text-black font-medium text-2xl ml-[160px] " >
+       <div class="random bg-[#fec5fb] relative z-10 p-2 w-fit" >Animate Everything</div>
+       <div class="bg-[#ff8709] relative z-0 top-[-12px] p-2 w-fit">That's Right,Anything</div>
+    </div>
+     <div class="text-white text-4xl font-medium ml-[110px] mt-[120px]">Whether you're animating UI,<br> SVG or creating immersive WebGL <br>experiences, GSAP has your back.
+      </div>
+     </div>
+     <div class="ml-[110px]" >
+      <img class="circle ml-[120px] " src="circle.png"  >
+       <svg width="348" height="248" viewBox="0 0 248 248" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="flower ml-[400px] " aria-hidden="true" style="rotate: 90;">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M62 124C27.7583 124 0 151.758 0 186C0 220.242 27.7583 248 62 248C96.2417 248 124 220.242 124 186C124 220.242 151.758 248 186 248C220.242 248 248 220.242 248 186C248 151.758 220.242 124 186 124C220.242 124 248 96.2417 248 62C248 27.7583 220.242 0 186 0C151.758 0 124 27.7583 124 62C124 27.7583 96.2417 0 62 0C27.7583 0 0 27.7583 0 62C0 96.2417 27.7583 124 62 124Z" fill="url(#paint0_radial_2080_56318)"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M62 124C27.7583 124 0 151.758 0 186C0 220.242 27.7583 248 62 248C96.2417 248 124 220.242 124 186C124 220.242 151.758 248 186 248C220.242 248 248 220.242 248 186C248 151.758 220.242 124 186 124C220.242 124 248 96.2417 248 62C248 27.7583 220.242 0 186 0C151.758 0 124 27.7583 124 62C124 27.7583 96.2417 0 62 0C27.7583 0 0 27.7583 0 62C0 96.2417 27.7583 124 62 124Z" fill="url(#paint1_radial_2080_56318)"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M62 124C27.7583 124 0 151.758 0 186C0 220.242 27.7583 248 62 248C96.2417 248 124 220.242 124 186C124 220.242 151.758 248 186 248C220.242 248 248 220.242 248 186C248 151.758 220.242 124 186 124C220.242 124 248 96.2417 248 62C248 27.7583 220.242 0 186 0C151.758 0 124 27.7583 124 62C124 27.7583 96.2417 0 62 0C27.7583 0 0 27.7583 0 62C0 96.2417 27.7583 124 62 124Z" fill="url(#pattern-home-animate-flower-0)" fill-opacity="0.6" style="mix-blend-mode:multiply"></path>
+<defs>
+<pattern id="pattern-home-animate-flower-0" patternContentUnits="objectBoundingBox" width="0.403226" height="0.403226">
+<use xlink:href="#svg-noise" transform="scale(0.000806452)"></use>
+</pattern>
+<radialGradient id="paint0_radial_2080_56318" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(76.3114 176.859) rotate(-90) scale(194.26 195.353)">
+<stop stop-color="#E193FF"></stop>
+<stop offset="0.6721" stop-color="#8E78DA"></stop>
+<stop offset="0.7378" stop-color="#937DDB"></stop>
+<stop offset="0.8164" stop-color="#A28BDD"></stop>
+<stop offset="0.9014" stop-color="#BAA3E2"></stop>
+<stop offset="0.9905" stop-color="#DBC3E7"></stop>
+<stop offset="1" stop-color="#DFC7E8"></stop>
+</radialGradient>
+<radialGradient id="paint1_radial_2080_56318" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(-27 234) rotate(-68.2758) scale(275.572 434.122)">
+<stop stop-color="#FFE2F2"></stop>
+<stop offset="0.609375" stop-color="#FFADDA"></stop>
+<stop offset="0.776042" stop-color="#FF7CC5"></stop>
+<stop offset="0.911458" stop-color="#FF71BF"></stop>
+<stop offset="1" stop-color="#F84FAC"></stop>
+</radialGradient>
+</defs>
+</svg>
+<svg width="496" height="248" viewBox="0 0 496 248" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="half-circle ml-[180px] mt-[-70px] " aria-hidden="true" style="">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M496 248C496 111.033 384.967 5.987e-06 248 0C111.033 -5.987e-06 5.987e-06 111.033 0 248L496 248Z" fill="url(#paint0_radial_2080_56314)"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M496 248C496 111.033 384.967 5.987e-06 248 0C111.033 -5.987e-06 5.987e-06 111.033 0 248L496 248Z" fill="url(#pattern-home-animate-half-circle-0)" fill-opacity="0.6" style="mix-blend-mode:multiply"></path>
+<defs>
+<pattern id="pattern-home-animate-half-circle-0" patternContentUnits="objectBoundingBox" width="0.201613" height="0.403226">
+<use xlink:href="#svg-noise" transform="scale(0.000403226 0.000806452)"></use>
+</pattern>
+<radialGradient id="paint0_radial_2080_56314" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(137.354 461.661) rotate(-54.9042) scale(517.614 425.925)">
+<stop offset="0.380208" stop-color="#D1FFBC"></stop>
+<stop offset="0.734375" stop-color="#0AE448"></stop>
+<stop offset="1" stop-color="#0AA3E4"></stop>
+</radialGradient>
+</defs>
+</svg>
+<svg width="62" height="62" viewBox="0 0 52 62" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="timer  mt-[-120px] ml-[220px] opacity-0" aria-hidden="true" style="">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M29.2532 28.1943C27.7212 29.751 27.7212 32.249 29.2532 33.8057L50.3023 55.1943C52.7911 57.7232 50.9996 62 47.4513 62H26H4.54865C1.00044 62 -0.79113 57.7232 1.69768 55.1943L22.7468 33.8057C24.2788 32.249 24.2788 29.7511 22.7468 28.1943L1.69769 6.80572C-0.791119 4.27676 1.00044 5.24575e-07 4.54865 8.34769e-07L26 2.71011e-06L47.4514 4.58544e-06C50.9996 4.89564e-06 52.7911 4.27676 50.3023 6.80572L29.2532 28.1943Z" fill="url(#paint0_linear_2080_57096)"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M29.2532 28.1943C27.7212 29.751 27.7212 32.249 29.2532 33.8057L50.3023 55.1943C52.7911 57.7232 50.9996 62 47.4513 62H26H4.54865C1.00044 62 -0.79113 57.7232 1.69768 55.1943L22.7468 33.8057C24.2788 32.249 24.2788 29.7511 22.7468 28.1943L1.69769 6.80572C-0.791119 4.27676 1.00044 5.24575e-07 4.54865 8.34769e-07L26 2.71011e-06L47.4514 4.58544e-06C50.9996 4.89564e-06 52.7911 4.27676 50.3023 6.80572L29.2532 28.1943Z" fill="url(#pattern-home-animate-timer-0)"></path>
+<defs>
+<pattern id="pattern-home-animate-timer-0" patternContentUnits="objectBoundingBox" width="8.06452" height="8.06452">
+<use xlink:href="#svg-noise" transform="scale(0.016129)"></use>
+</pattern>
+<linearGradient id="paint0_linear_2080_57096" x1="-7.77612" y1="17.8134" x2="63.2463" y2="31" gradientUnits="userSpaceOnUse">
+<stop offset="0.0242443" stop-color="#EDBEFF"></stop>
+<stop offset="0.84375" stop-color="#8E78DA"></stop>
+</linearGradient>
+</defs>
+</svg>
+
+     </div>
+   
+    </div>
+  </div>
+
+  <div style="height: 2000px;"></div>
+
+  <script>
+ 
+
+window.addEventListener("DOMContentLoaded", function () {
+  var animate = document.querySelector("#mate");
+var animetext = animate.textContent;
+var clutter1 = "";
+var splitted = animetext.split('');
+var tl = gsap.timeline();
+
+splitted.forEach((e, i) => {
+    clutter1 += `<span class="char${i}">${e === ' ' ? '&nbsp;' : e}</span>`;
+});
+animate.innerHTML = clutter1;
+
+var anything = document.querySelector("#anything");
+var anythingtext = anything.textContent;
+var clutter2 = "";
+var sp = anythingtext.split('');
+
+sp.forEach((e, i) => {
+    clutter2 += `<span class="anythingchar${i}">${e === ' ' ? '&nbsp;' : e}</span>`;
+});
+anything.innerHTML = clutter2;
+
+console.log(document.querySelector(".char0")); 
+
+tl.from(".char0", {
+    rotationX: -120,
+    y:12,
+    opacity: 0.5,
+    duration: 0.2,
+    delay: 0.5,
+    
+});
+
+tl.from(".char1",{
+    rotationY:360,
+    opacity: 0,
+   
+    onComplete:()=>{
+         var c=document.querySelector(".char1");
+         c.innerHTML='n'
+    }
+});
+gsap.fromTo(".xcircle", {
+    opacity: 0,
+    x: -120
+}, {
+    opacity: 1,
+    x: 120,
+    y:50,
+    duration: 0.2,
+    ease: "power2.out",
+    rotation:360,
+});
+gsap.to(".xcircle",{
+  rotation:360,
+  repeat:-1,
+  repeatDelay:2
+})
+
+
+
+tl.from(".char2",{
+    y:-120,
+    opacity: 0,
+})
+tl.from(".char3",{
+    opacity: 0,
+    x:-30
+})
+tl.to([".char5",".char6"],{
+    y:120,
+    opacity:0,
+     ease: "power1.in",
+    onComplete:()=>{
+        var d=document.querySelector(".char5");
+        var e=document.querySelector(".char6");
+        d.innerHTML="t"
+        e.innerHTML="e"
+    },
+    opacity:1,
+    y:0
+    
+})
+tl.fromTo([".char5", ".char6"], 
+  { y: -120, opacity: 0 },
+  { y: 0, opacity: 1, duration: 0.6, ease: "back.out(1.7)" }
+);
+tl.from(".char4",{
+    opacity: 0,
+    y:22,
+})
+tl.from(".anythingchar0",{
+    y:50,
+    opacity: 0,
+   ease:"elastic.out(2,0.3)",
+   duration:2,
+
+})
+tl.from(".anythingchar2",{
+    rotationY:360,
+    opacity: 0,
+    y:-120
+})
+tl.from(".anythingchar1",{
+    y:50,
+    opacity: 0,
+   ease:"elastic.out(2,0.3)",
+   duration:1,
+
+})
+tl.from(".anythingchar3",{
+    opacity:0
+})
+tl.from(".anythingchar4",{
+    opacity:0,
+    y:-120
+})
+tl.from(".anythingchar5",{
+    opacity:0,
+    rotationX:270,
+    duration:1,
+    repeat:-1,
+    repeatDelay: 1,
+})
+tl.from(".anythingchar7",{
+    opacity: 0,
+    rotationZ:-120
+})
+tl.from(".anythingchar6",{
+    opacity: 0,
+    x:-20,
+    
+})
+tl.from(".spiral",{
+    y:12,
+    opacity: 0,
+    duration:1,
+    ease:"bounce.out(1,0.3)",
+    
+})
+tl.from(".spiral",{
+    y:-12,
+    repeat:-1,
+    duration: 2,
+    repeatDelay:2,
+    yoyo:true
+})
+tl.to(".circle", {
+    rotationZ: 360,
+    duration: 2.5,
+    ease: "power2.inOut",
+    repeat:-1,
+    repeatDelay: 2,
+});
+});
+// Split the words inside `.touchy` into spans
+const touchy = document.querySelector(".touchy");
+const words = touchy.textContent.trim().split(" ");
+
+touchy.innerHTML = words
+  .map(word => `<span class="word inline-block mr-2">${word}</span>`)
+  .join(" ");
+
+// Animate each word with a stagger
+gsap.fromTo(".word", 
+  { color: "green", opacity: 0, y: 20 },
+  {
+    color: "white", // or your desired final color
+    opacity: 1,
+    y: 0,
+    duration: 1,
+    stagger: 0.2,
+    scrollTrigger: {
+      trigger: ".touchy",
+      start: "top 80%",
+      toggleActions: "play none none none"
+    }
+  }
+);
+
+gsap.registerPlugin(ScrollTrigger);
+gsap.to(".hyphen", {
+      x: () => {
+        const el = document.querySelector(".hyphen");
+        return -1 * (el.scrollWidth - window.innerWidth); // shift left by total overflow
+      },
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".wrapper",
+        start: "top",
+        end: () => "+=" + (document.querySelector(".hyphen").scrollWidth), // dynamic scroll distance
+        scrub: true,
+        pin: true,
+        markers: true
+      }
+    });
+    gsap.from(".flower",{
+      opacity: 0,
+      x:220,
+      rotation: 360,
+      duration: 1,
+      scrollTrigger: {
+    trigger: ".wrapper",
+    start: "top center",
+    toggleActions: "play none none none"
+  }
+
+    })
+    gsap.to(".timer",{
+      opacity: 1,
+      duration:1,
+      x:-90,
+      y:-150,
+      scrollTrigger: {
+    trigger: ".wrapper",
+    start: "top center",
+    toggleActions: "play none none none"
+  }
+    })
+    gsap.from(".circle",{
+      opacity: 0,
+      x:220,
+      y:220,
+      duration:2,
+      scrollTrigger: {
+    trigger: ".wrapper",
+    start: "top center",
+    toggleActions: "play none none none"
+  }
+    })
+  </script>
+</body>
+</html>
