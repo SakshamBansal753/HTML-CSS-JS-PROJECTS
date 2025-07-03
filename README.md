@@ -1,4 +1,4 @@
-# WEB DEVELOPMENT
+# WEB DEVELOPMENT 🕸️
 
 **📚 Learning Goals**
 💡 Master frontend structure and styling
